@@ -116,3 +116,19 @@ function removeVillage(village: Village) {
     display: "none",
   });
 }
+
+// Helper: Get parameter by name
+function getParameterByName(name: string, url = window.location.href) {
+  return new URL(url).searchParams.get(name);
+}
+
+// Initalize Script
+(function () {
+  const gameScreen = getParameterByName("screen");
+
+  if (gameScreen === "map") {
+    initFilter();
+  } else {
+    window.UI.ErrorMessage("Skript musí být spuštěn na mapě!", 4000);
+  }
+})();
