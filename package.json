@@ -1,0 +1,24 @@
+{
+  "name": "twscripts",
+  "version": "1.0.0",
+  "description": "Scripts for Tribal Wars",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tribal",
+    "wars",
+    "divoke",
+    "kmeny"
+  ],
+  "author": "Pegak",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.1"
+  }
+}
